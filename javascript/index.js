@@ -43,6 +43,21 @@ function updateTime() {
     );
   }
 
+  // Kinshasa
+
+  let kinshasaElement = document.querySelector("#kinshasa");
+
+  if (kinshasaElement) {
+    let kinshasaDateElement = kinshasaElement.querySelector(".date");
+    let kinshasaTimeElement = kinshasaElement.querySelector(".time");
+    let kinshasaTime = moment().tz("Africa/Kinshasa");
+
+    kinshasaDateElement.innerHTML = kinshasaTime.format("MMMM Do YYYY");
+    kinshasaTimeElement.innerHTML = kinshasaTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   // Sydney
 
   let sydneyElement = document.querySelector("#sydney");
