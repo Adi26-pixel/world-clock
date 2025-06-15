@@ -61,6 +61,21 @@ h1 {
   line-height: 48px;
 }
 
+.back_btn {
+  text-decoration: none;
+  font-size: 22px;
+  color: #430f58;
+}
+
+.back_btn:hover {
+  color: #8594e4;
+  cursor: pointer;
+}
+
+.back_btn:visited {
+  color: #6643b5;
+}
+
 footer {
   text-align: center;
   font-size: 18px;
